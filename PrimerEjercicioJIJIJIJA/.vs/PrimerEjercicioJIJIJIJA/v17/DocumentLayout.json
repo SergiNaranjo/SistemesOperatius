@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\ThreadTutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|solutionrelative:TutorialThread\\ThreadTutorial.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\PrimerEjercicioJIJIJIJA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|solutionrelative:PrimerEjercicioJIJIJIJA.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|solutionrelative:TutorialThread\\InputSystem\\InputSystem.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputConsts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|solutionrelative:TutorialThread\\InputSystem\\InputConsts.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AB38F76B-0243-4D1E-9EE2-1239C8BAD2BB}|PrimerEjercicioJIJIJIJA.vcxproj|solutionrelative:TutorialThread\\InputSystem\\InputSystem.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,31 +25,63 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 109,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThreadTutorial.h",
-              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\ThreadTutorial.h",
-              "RelativeDocumentMoniker": "TutorialThread\\ThreadTutorial.h",
-              "ToolTip": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\ThreadTutorial.h",
-              "RelativeToolTip": "TutorialThread\\ThreadTutorial.h",
-              "ViewState": "AQIAAEQAAAAAAAAAAAAqwD0AAAA5AAAA",
+              "DocumentIndex": 3,
+              "Title": "InputSystem.h",
+              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.h",
+              "RelativeDocumentMoniker": "TutorialThread\\InputSystem\\InputSystem.h",
+              "ToolTip": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.h",
+              "RelativeToolTip": "TutorialThread\\InputSystem\\InputSystem.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-09-16T15:23:05.617Z",
+              "WhenOpened": "2025-09-23T15:20:10.852Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 221,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "InputSystem.cpp",
+              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.cpp",
+              "RelativeDocumentMoniker": "TutorialThread\\InputSystem\\InputSystem.cpp",
+              "ToolTip": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputSystem.cpp",
+              "RelativeToolTip": "TutorialThread\\InputSystem\\InputSystem.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-23T15:20:41.224Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "InputConsts.h",
+              "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputConsts.h",
+              "RelativeDocumentMoniker": "TutorialThread\\InputSystem\\InputConsts.h",
+              "ToolTip": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\TutorialThread\\InputSystem\\InputConsts.h",
+              "RelativeToolTip": "TutorialThread\\InputSystem\\InputConsts.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-09-23T15:14:21.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "PrimerEjercicioJIJIJIJA.cpp",
               "DocumentMoniker": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\PrimerEjercicioJIJIJIJA.cpp",
               "RelativeDocumentMoniker": "PrimerEjercicioJIJIJIJA.cpp",
               "ToolTip": "C:\\Users\\naran\\Desktop\\SistemesOperatius\\PrimerEjercicioJIJIJIJA\\PrimerEjercicioJIJIJIJA.cpp",
               "RelativeToolTip": "PrimerEjercicioJIJIJIJA.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAABwAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-16T15:12:37.117Z",
               "EditorCaption": ""

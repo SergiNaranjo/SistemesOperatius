@@ -127,9 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="TutorialThread\InputSystem\InputSystem.cpp" />
+    <ClCompile Include="TutorialThread\Utils\ConsoleControl.cpp" />
     <ClCompile Include="PrimerEjercicioJIJIJIJA.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="TutorialThread\InputSystem\InputSystem.h" />
+    <ClInclude Include="TutorialThread\InputSystem\InputConsts.h" />
+    <ClInclude Include="TutorialThread\Utils\ConsoleControl.h" />
     <ClInclude Include="TutorialThread\ThreadTutorial.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

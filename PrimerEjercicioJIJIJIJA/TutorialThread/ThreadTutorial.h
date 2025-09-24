@@ -3,10 +3,13 @@
 #include <string>
 #include <thread>
 #include <chrono>
+#include <list>
+#include <mutex>
 
 #pragma region Functions Declaration Header
 
 std::chrono::system_clock::time_point startDate;
+std::mutex* consoleMutex;
 
 #pragma endregion 
 
@@ -22,9 +25,10 @@ void Example07();
 
 void ThreadTutorialTest()
 {
+	consoleMutex = new std::mutex();
 	startDate = std::chrono::system_clock::now();
 
-	int exampleUsed = 1; //Change this variable for use differents examples
+	int exampleUsed = 7; //Change this variable for use differents examples
 
 	switch (exampleUsed)
 	{
@@ -59,7 +63,12 @@ void ThreadTutorialTest()
 void PrintLapsedTime(std::chrono::system_clock::time_point start, std::chrono::system_clock::time_point end, std::string threadName)
 {
 	std::chrono::duration<double> elapsedTime = end - start;
-	std::cout << "Thread: " << threadName << "- Elapsed Time" << elapsedTime.count() << " seconds" << std::endl;
+
+	consoleMutex->lock();
+
+	std::cout << "Thread: " << threadName << " - Elapsed Time" << elapsedTime.count() << " seconds" << std::endl;
+
+	consoleMutex->unlock();
 }
 
 void Count(unsigned long long maxCounter, std::string threadName)
@@ -90,30 +99,121 @@ void Example01()
 
 void Example02()
 {
+	unsigned long long totalCount = 100000000ull;
 
+	std::thread* Counter1 = new std::thread(Count, totalCount, "1");
+	
+	Counter1->join();
+
+	std::thread* Counter2 = new std::thread(Count, totalCount, "2");
+	std::thread* Counter3 = new std::thread(Count, totalCount, "3");
+
+	Counter2->join();
+	Counter3->join();
+
+	Count(totalCount, "0");
 }
 
 void Example03()
 {
+	unsigned long long totalCount = 100000000ull;
 
+	std::thread* Counter1 = new std::thread(Count, totalCount, "1");
+	std::thread* Counter2 = new std::thread(Count, totalCount, "2");
+	std::thread* Counter3 = new std::thread(Count, totalCount, "3");
+
+	Counter1->detach();
+	Counter2->detach();
+	Counter3->detach();
+
+	Count(totalCount, "0");
 }
 
 void Example04()
 {
+	std::list<std::thread*>* threads = new std::list<std::thread*>();
 
+	unsigned long long totalCount = 100000000ull;
+
+	for (int i = 0; i < 3; i++)
+	{
+		std::thread* counterThread = new std::thread(Count, totalCount, std::to_string(i + 1));
+		threads->push_back(counterThread);
+		counterThread->join();
+	}
+
+	Count(totalCount, "0");
 }
 
 void Example05()
 {
+	std::list<std::thread*>* threads = new std::list<std::thread*>();
 
+	unsigned long long totalCount = 100000000ull;
+
+	for (int i = 0; i < 3; i++)
+	{
+		std::thread* counterThread = new std::thread(Count, totalCount, std::to_string(i + 1));
+		threads->push_back(counterThread);
+		counterThread->detach();
+	}
+
+	Count(totalCount, "0");
 }
 
 void Example06()
 {
+	unsigned int maxThreads = std::thread::hardware_concurrency();
 
+	std::cout << maxThreads << " courrent threads are supported" << std::endl;
+
+	int extraThreads = 0;
+	
+	unsigned long long totalCount = 100000000ull;
+
+	unsigned int totalThreads = maxThreads + extraThreads;
+
+	std::list<std::thread*>* threads = new std::list<std::thread*>();
+
+	for (int i = 0; i < totalThreads; i++)
+	{
+		std::thread* counterThread = new std::thread(Count, totalCount, std::to_string(i + 1));
+		threads->push_back(counterThread);
+	}
+
+	for (std::thread* t : *threads)
+	{
+		t->join();
+	}
+
+	Count(totalCount, "0");
+}
+
+class ThreadTester
+{
+public:
+	ThreadTester() {}
+	~ThreadTester() {}
+
+	void Example07();
+private:
+
+	void TestFunction(unsigned long long testInt);
+};
+
+void ThreadTester::Example07()
+{
+	std::thread* testThread = new std::thread(&ThreadTester::TestFunction, this, 14ull);
+	testThread->join();
+}
+
+void ThreadTester::TestFunction(unsigned long long testInt)
+{
+	std::cout << "Number is: " << testInt << std::endl;
 }
 
 void Example07()
 {
-
+	ThreadTester* threadTester = new ThreadTester();
+	threadTester->Example07();
 }
